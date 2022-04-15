@@ -9,13 +9,15 @@ import { HeaderComponent } from './shared/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SignupButtonComponent } from './shared/signup-button/signup-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    SignupButtonComponent
   ],
   imports: [
     BrowserModule,
