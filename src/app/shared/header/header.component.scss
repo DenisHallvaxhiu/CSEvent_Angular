@@ -1,4 +1,55 @@
-// Footer wavy
-// <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-//   <path fill="#0099ff" fill-opacity="1" d="M0,0L48,37.3C96,75,192,149,288,197.3C384,245,480,267,576,256C672,245,768,203,864,160C960,117,1056,75,1152,58.7C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-//   </svg>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #2A3342;
+}
+
+li,a,button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    height: 75px;
+}
+
+.nav_links{
+    list-style:none;
+    li{
+        display: inline-block;
+        padding: 0px 20px;
+        a{
+            font-weight: 550;
+            transition: all 0.3s ease 0s;
+            color: #8896AB;
+        }
+        a:hover{
+            color: aquamarine;
+        }
+        .product{
+            color: #edf0f1;
+        }
+    }
+}
+
+button{
+    padding: 9px 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.login{
+    color: #8896AB;
+}
+.signup{
+    background-color: #22C55E;
+    border-radius: 10px;
+}
