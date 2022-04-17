@@ -10,6 +10,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignupButtonComponent } from './shared/signup-button/signup-button.component';
+import { EmailFormComponent } from './shared/email-form/email-form.component';
+import { FormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -17,14 +20,17 @@ import { SignupButtonComponent } from './shared/signup-button/signup-button.comp
     HeaderComponent,
     HomeComponent,
     DashboardComponent,
-    SignupButtonComponent
+    SignupButtonComponent,
+    EmailFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

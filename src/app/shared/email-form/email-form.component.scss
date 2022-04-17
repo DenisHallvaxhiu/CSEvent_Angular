@@ -1,0 +1,25 @@
+.EmailForm {
+  border-radius: 15px;
+  width: 500px;
+  background-color: rgb(233, 233, 230);
+  padding: 20px;
+  &-wrapper {
+    text-align: center;
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+    &-button {
+     padding: 10px 0px;
+    }
+    &-input {
+      width: 275px;
+      margin: 0 auto;
+    }
+  }
+  &-signupButtons {
+    &-btn  {
+      margin-bottom: 10px;
+    }
+  }
+}

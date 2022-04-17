@@ -1,0 +1,50 @@
+<div class="EmailForm">
+  <div class="EmailForm-wrapper">
+    <h2>Join our community</h2>
+    <h4>Start your free trial</h4>
+    <div class="EmailForm-form">
+      <label>Email</label>
+      <mat-form-field class="EmailForm-form-input" appearance="outline">
+        <mat-label>Enter your email address</mat-label>
+        <input type="email" matInput placeholder="Enter your email address" />
+        <mat-error
+          *ngIf="
+            emailFormControl.hasError('email') &&
+            !emailFormControl.hasError('required')
+          "
+        >
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <app-signup-button
+        class="EmailForm-form-button"
+        text="Get Started"
+      ></app-signup-button>
+    </div>
+    <div class="EmailForm-signupButtons">
+      <!-- TODO: Need to find a way to  call the app-signup-button and have paddings without having to wrrap around a div -->
+      <div class="EmailForm-signupButtons-btn">
+        <app-signup-button
+          matIcon="home"
+          text="Sign in with Google"
+        ></app-signup-button>
+      </div>
+      <div class="EmailForm-signupButtons-btn">
+        <app-signup-button
+          matIcon="apple"
+          text="Sign in with Apple"
+        ></app-signup-button>
+      </div>
+      <div class="EmailForm-signupButtons-btn">
+        <app-signup-button
+          matIcon="facebook"
+          text="Sign in with Facebook"
+        ></app-signup-button>
+      </div>
+      <p>Already have an account? <a href="#">Sign in</a></p>
+    </div>
+  </div>
+</div>
